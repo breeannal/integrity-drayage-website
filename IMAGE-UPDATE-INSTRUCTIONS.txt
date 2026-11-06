@@ -1,0 +1,33 @@
+INTEGRITY DRAYAGE WEBSITE IMAGE UPDATE
+
+1) Upload these two image files to the SAME main repository folder as index.html:
+   integrity-logo-new.jpg
+   integrity-team.jpg
+
+2) In index.html, replace BOTH occurrences of:
+   <img class="brand-logo" src="integrity-logo.jpg" alt="Integrity Drayage and Evans Delivery Company logo">
+
+   with:
+   <img class="brand-logo" src="integrity-logo-new.jpg" alt="Integrity Drayage and Evans Delivery Company logo">
+
+3) In the <style> section, replace the existing .photo and .photo:after rules with:
+
+.photo {
+  min-height: 440px;
+  background-image: url('integrity-team.jpg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #0b141b;
+  position: relative;
+}
+.photo:after {
+  content: none;
+}
+
+4) Save/Commit the changes. Cloudflare Pages should deploy automatically.
+
+IMPORTANT:
+- Do not put either image inside the admin folder.
+- The image filenames must match the code exactly.
+- This keeps the whole team graphic visible instead of cropping it.
