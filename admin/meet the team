@@ -1,1 +1,5 @@
-
+.photo{
+min-height:500px;
+background:url('integrity-team.jpg') center/contain no-repeat;
+background-color:#f5f7f6;
+position:relative;}
