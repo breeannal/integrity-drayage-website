@@ -1,1 +1,127 @@
 
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Integrity Drayage provides dependable container drayage, intermodal, regional freight, and over-the-road transportation solutions.">
+<meta name="theme-color" content="#111820">
+<title>Integrity Drayage | Moving Freight. Building Trust.</title>
+<style>
+:root{--red:#c91f35;--red2:#ef3347;--ink:#111820;--navy:#182632;--slate:#53616c;--paper:#f4f5f6;--white:#fff;--line:#e1e5e8;--max:1180px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}
+.topbar{background:#0b1117;color:#e8edf0;font-size:12px;padding:9px 0}
+.topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.topbar a{color:#fff;font-weight:700}
+.header{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 4px 22px #10182012}
+.nav{min-height:88px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.logo{width:225px;height:76px;object-fit:contain}
+.links{display:flex;align-items:center;gap:25px;font-size:12px;font-weight:800;letter-spacing:.07em}
+.links a:hover{color:var(--red)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 20px;background:var(--red);color:#fff;border:1px solid var(--red);font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;transition:.2s;cursor:pointer}
+.btn:hover{background:#a9182a;border-color:#a9182a;transform:translateY(-1px)}
+.btn.ghost{background:transparent;border-color:#ffffffa8;color:#fff}
+.btn.dark{background:var(--ink);border-color:var(--ink)}
+.menu{display:none;border:0;background:none;font-size:28px;color:var(--ink)}
+.hero{position:relative;isolation:isolate;min-height:650px;display:flex;align-items:center;color:#fff;background:#101820 url('https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=2200&q=85') center/cover}
+.hero:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(7,13,19,.96) 0%,rgba(7,13,19,.82) 48%,rgba(7,13,19,.28) 100%)}
+.hero-copy{max-width:760px;padding:100px 0}
+.kicker{font-size:11px;font-weight:900;letter-spacing:.24em;text-transform:uppercase;color:var(--red2)}
+.hero h1{font-size:clamp(44px,6.5vw,78px);line-height:1.02;letter-spacing:-.045em;margin:18px 0}
+.hero h1 span{color:#ff4357}
+.hero p{font-size:18px;color:#e1e6e9;max-width:650px;margin:0 0 30px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.proof{display:flex;gap:24px;flex-wrap:wrap;margin-top:48px;padding-top:22px;border-top:1px solid #ffffff45;font-size:12px;font-weight:700;color:#e6ebee}
+.proof span:before{content:"✓";color:#ff4357;margin-right:9px;font-weight:900}
+.stats{background:var(--navy);color:#fff}
+.statgrid{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:25px 22px;border-right:1px solid #ffffff20}
+.stat:last-child{border:0}
+.stat strong{display:block;color:#ff4357;font-size:23px}
+.stat small{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#c6d0d6}
+.section{padding:88px 0}
+.soft{background:var(--paper)}
+.section-head{max-width:700px;margin-bottom:38px}
+.section-head h2,.about-copy h2{font-size:clamp(32px,4vw,48px);line-height:1.12;letter-spacing:-.035em;margin:12px 0}
+.section-head p,.about-copy p{color:#5e6a73;font-size:16px}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.service{padding:28px;background:#fff;border:1px solid var(--line);border-top:3px solid var(--red);min-height:205px;transition:.2s}
+.service:hover{transform:translateY(-4px);box-shadow:0 14px 30px #10182012}
+.num{font-size:11px;color:var(--red);font-weight:900;letter-spacing:.16em}
+.service h3{font-size:20px;margin:12px 0 7px}
+.service p{font-size:14px;color:#68747d;margin:0}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:58px;align-items:center}
+.team-frame{background:#0d1319;padding:10px;box-shadow:18px 18px 0 var(--red)}
+.team-frame img{width:100%;height:auto}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:25px 0}
+.checks div{font-size:13px;font-weight:700}
+.checks div:before{content:"✓";color:var(--red);font-weight:900;margin-right:9px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+.step{border-top:3px solid var(--red);padding-top:18px}
+.step b{font-size:11px;color:var(--red);letter-spacing:.16em}
+.step h3{font-size:20px;margin:9px 0}
+.step p{font-size:14px;color:#65717a}
+.cta{background:linear-gradient(110deg,#101820,#243746);color:#fff;padding:62px 0}
+.cta-inner{display:flex;align-items:center;justify-content:space-between;gap:25px}
+.cta h2{font-size:clamp(28px,4vw,42px);line-height:1.1;margin:10px 0}
+.cta p{color:#cbd4da;margin:0}
+.contact-layout{display:grid;grid-template-columns:1.35fr .8fr;gap:30px;align-items:start}
+.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{display:flex;flex-direction:column;gap:6px}
+.field.full{grid-column:1/-1}
+.field label{font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#4b5962}
+.field input,.field select,.field textarea{width:100%;padding:14px;border:1px solid #d6dde1;background:#fff;font:inherit;font-size:14px;border-radius:0}
+.field textarea{min-height:115px;resize:vertical}
+.form-note{font-size:12px;color:#78858d;margin-top:10px}
+.contact-card{background:var(--navy);color:#fff;padding:32px}
+.contact-card h3{font-size:25px;margin:8px 0 14px}
+.contact-card p{font-size:14px;color:#d0d9de}
+.contact-card a{color:#ff6475;font-weight:800}
+.coverage{border-top:1px solid #ffffff2b;margin-top:22px;padding-top:18px}
+.footer{background:#0a1117;color:#c7d0d6;padding:48px 0 20px}
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:38px}
+.footer-logo{width:220px;max-height:80px;object-fit:contain;background:#fff;padding:5px}
+.footer h4{color:#fff;font-size:12px;letter-spacing:.12em;text-transform:uppercase;margin:0 0 12px}
+.footer p,.footer a{font-size:13px;color:#aeb9c0}
+.footer a{display:block;margin:8px 0}
+.copyright{border-top:1px solid #ffffff20;margin-top:35px;padding-top:16px;font-size:11px;color:#87949c;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:900px){.links{display:none;position:absolute;top:88px;left:0;right:0;background:#fff;padding:20px 24px;flex-direction:column;align-items:flex-start;box-shadow:0 12px 20px #10182018}.links.open{display:flex}.menu{display:block}.nav>.btn{display:none}.services{grid-template-columns:repeat(2,1fr)}.about{gap:34px}.statgrid{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid #ffffff20}.contact-layout{grid-template-columns:1fr}}
+@media(max-width:620px){.wrap{width:calc(100% - 32px)}.topbar .wrap{font-size:11px}.nav{min-height:76px}.logo{width:185px;height:66px}.links{top:76px}.hero{min-height:610px}.hero-copy{padding:76px 0}.hero p{font-size:16px}.proof{flex-direction:column;gap:10px;margin-top:34px}.section{padding:65px 0}.services,.about,.steps,.footer-grid{grid-template-columns:1fr}.team-frame{order:0}.checks{grid-template-columns:1fr}.cta-inner{align-items:flex-start;flex-direction:column}.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.stat{padding:20px 14px}.stat strong{font-size:20px}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="wrap"><span>DEPENDABLE DRAYAGE • REGIONAL FREIGHT • OTR</span><span><a href="tel:+17068710981">706-871-0981</a> &nbsp; | &nbsp; <a href="mailto:rid@integritydrayage.com">rid@integritydrayage.com</a></span></div></div>
+<header class="header"><div class="wrap nav">
+<a href="#home" aria-label="Integrity Drayage home"><img class="logo" src="logo.jpg" alt="Integrity Drayage and Evans Delivery Company logo"></a>
+<nav class="links" id="navlinks"><a href="#services">SERVICES</a><a href="#about">OUR TEAM</a><a href="#process">HOW IT WORKS</a><a href="#drivers">DRIVE WITH US</a><a href="#contact">CONTACT</a></nav>
+<a class="btn" href="#quote">Request a Quote</a><button class="menu" aria-label="Open menu" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="wrap"><div class="hero-copy"><div class="kicker">Southeast roots. Regional strength. OTR reach.</div><h1>Moving Freight.<br><span>Building Trust.</span></h1><p>Reliable container drayage and transportation solutions across the Southeast, backed by responsive service and a team that takes every move personally.</p><div class="actions"><a class="btn" href="#quote">Request a Freight Quote</a><a class="btn ghost" href="#services">Explore Our Services</a></div><div class="proof"><span>Responsive Communication</span><span>Regional + OTR Coverage</span><span>Solutions Built Around Your Freight</span></div></div></div></section>
+<section class="stats"><div class="wrap statgrid"><div class="stat"><strong>Southeast</strong><small>Core Service Region</small></div><div class="stat"><strong>OTR</strong><small>Long-Haul Capabilities</small></div><div class="stat"><strong>Freight First</strong><small>Service-Minded Team</small></div><div class="stat"><strong>Integrity</strong><small>In Every Move</small></div></div></section>
+<section class="section" id="services"><div class="wrap"><div class="section-head"><div class="kicker">What we do</div><h2>Transportation that keeps business moving.</h2><p>From port and rail moves to regional and over-the-road freight, Integrity Drayage works to make every shipment simpler, more visible, and more dependable.</p></div><div class="services">
+<article class="service"><div class="num">01 / DRAYAGE</div><h3>Container Drayage</h3><p>Dependable container transportation connecting ports, rail facilities, yards, and final delivery points.</p></article>
+<article class="service"><div class="num">02 / INTERMODAL</div><h3>Intermodal Transportation</h3><p>Coordinated freight movement connecting rail and road to support your supply chain.</p></article>
+<article class="service"><div class="num">03 / REGIONAL</div><h3>Southeast Regional Freight</h3><p>Regional transportation solutions for businesses moving freight throughout the Southeast.</p></article>
+<article class="service"><div class="num">04 / OTR</div><h3>Over-the-Road</h3><p>Longer-haul transportation options for freight moving beyond our core regional lanes.</p></article>
+<article class="service"><div class="num">05 / CAPACITY</div><h3>Dedicated &amp; Contract Moves</h3><p>Consistent transportation support for customers with recurring freight and ongoing capacity needs.</p></article>
+<article class="service"><div class="num">06 / SUPPORT</div><h3>Customer-Focused Coordination</h3><p>Clear communication and practical coordination from pickup planning through delivery.</p></article>
+</div></div></section>
+<section class="section soft" id="about"><div class="wrap about"><div class="team-frame"><img src="team.jpg" alt="Meet the Integrity Drayage team: Anika Findley, Erika Freeman, Breeanna Leiby, Katie Jones, and Lori Moore"></div><div class="about-copy"><div class="kicker">The people behind the service</div><h2>More than a truck. A team you can count on.</h2><p>At Integrity Drayage, dependable transportation starts with accountability. Our team focuses on communication, thoughtful planning, and doing what we say we will do.</p><p>From quoting and operations to customer coordination, we work together to keep freight and drivers moving.</p><div class="checks"><div>Responsive service</div><div>Regional knowledge</div><div>Flexible freight solutions</div><div>Commitment to follow-through</div></div><a class="btn dark" href="#contact">Talk With Our Team</a></div></div></section>
+<section class="section" id="process"><div class="wrap"><div class="section-head"><div class="kicker">A straightforward process</div><h2>From first call to final delivery.</h2><p>We keep the process clear so you know what information we need and what happens next.</p></div><div class="steps"><div class="step"><b>01 / SHARE THE DETAILS</b><h3>Tell us about your freight</h3><p>Send your origin, destination, equipment needs, timing, and shipment details.</p></div><div class="step"><b>02 / PLAN THE MOVE</b><h3>We coordinate the details</h3><p>Our team reviews your request and follows up to discuss availability, pricing, and the transportation plan.</p></div><div class="step"><b>03 / KEEP IT MOVING</b><h3>Stay connected</h3><p>We work with you through the shipment and keep communication at the center of the process.</p></div></div></div></section>
+<section class="cta" id="drivers"><div class="wrap cta-inner"><div><div class="kicker">Join the team</div><h2>Ready to drive with Integrity?</h2><p>We welcome qualified owner-operators interested in Southeast and OTR opportunities.</p></div><a class="btn" href="mailto:rid@integritydrayage.com?subject=Driver%20Opportunity%20-%20Integrity%20Drayage">Ask About Opportunities</a></div></section>
+<section class="section soft" id="quote"><div class="wrap"><div class="section-head"><div class="kicker">Let's get your freight moving</div><h2>Request a freight quote.</h2><p>Share a few details about your shipment. Your email app will open with the request prepared for our team.</p></div><div class="contact-layout"><form class="formgrid" id="quoteForm"><div class="field"><label for="name">Your name *</label><input id="name" name="Name" required placeholder="Full name"></div><div class="field"><label for="company">Company</label><input id="company" name="Company" placeholder="Company name"></div><div class="field"><label for="email">Email *</label><input id="email" name="Email" type="email" required placeholder="you@company.com"></div><div class="field"><label for="phone">Phone</label><input id="phone" name="Phone" type="tel" placeholder="Best contact number"></div><div class="field"><label for="origin">Pickup location *</label><input id="origin" name="Pickup location" required placeholder="City, State"></div><div class="field"><label for="destination">Delivery location *</label><input id="destination" name="Delivery location" required placeholder="City, State"></div><div class="field"><label for="equipment">Equipment / freight type</label><select id="equipment" name="Equipment"><option value="Not specified">Select one</option><option>Container drayage</option><option>Intermodal</option><option>Dry van</option><option>Other / not sure</option></select></div><div class="field"><label for="date">Requested pickup date</label><input id="date" name="Requested pickup date" type="date"></div><div class="field full"><label for="details">Shipment details</label><textarea id="details" name="Shipment details" placeholder="Container size, commodity, weight, terminal, timing, or other details..."></textarea></div><div class="field full"><button class="btn dark" type="submit">Prepare Quote Request</button><div class="form-note">This opens an email draft to rid@integritydrayage.com. This starter site does not store form submissions.</div></div></form><aside class="contact-card" id="contact"><div class="kicker">Get in touch</div><h3>Let's talk logistics.</h3><p>Have a question, need capacity, or want to discuss a lane? Reach out to our team.</p><p><strong>Phone</strong><br><a href="tel:+17068710981">706-871-0981</a></p><p><strong>Email</strong><br><a href="mailto:rid@integritydrayage.com">rid@integritydrayage.com</a></p><div class="coverage"><strong>Coverage</strong><p>Southeast United States + over-the-road</p></div></aside></div></div></section>
+</main>
+<footer class="footer"><div class="wrap"><div class="footer-grid"><div><img class="footer-logo" src="logo.jpg" alt="Integrity Drayage and Evans Delivery Company logo"><p>Moving freight with dependable service, clear communication, and integrity in every mile.</p></div><div><h4>Explore</h4><a href="#services">Our Services</a><a href="#about">Our Team</a><a href="#drivers">Drive With Us</a><a href="#quote">Request a Quote</a></div><div><h4>Contact</h4><a href="tel:+17068710981">706-871-0981</a><a href="mailto:rid@integritydrayage.com">rid@integritydrayage.com</a><p>Southeast + Over-the-Road Coverage</p></div></div><div class="copyright"><span>© <span id="year"></span> Integrity Drayage. All rights reserved.</span><span>Moving Freight. Building Trust.</span></div></div></footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('quoteForm').addEventListener('submit',function(e){e.preventDefault();const data=new FormData(this);const body=Array.from(data.entries()).map(([k,v])=>k+': '+v).join('\n');const subject='Freight Quote Request - Integrity Drayage';window.location.href='mailto:rid@integritydrayage.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent('Freight Quote Request\n\n'+body);});
+document.querySelectorAll('#navlinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navlinks').classList.remove('open')));
+</script>
+</body>
+</html>
